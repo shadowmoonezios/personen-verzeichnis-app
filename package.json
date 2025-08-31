@@ -1,19 +1,26 @@
 {
+  // Anwendungsname
   "name": "personen-verzeichnis-app",
+  // Versionsnummer
   "version": "1.0.0",
+  // Beschreibung der Anwendung
   "description": "Eine einfache webbasierte Anwendung zur Verwaltung von Kontakten mit einer vollständigen REST-API und einem ansprechenden Frontend.",
+  // Hauptdatei der Anwendung
   "main": "server.js",
+  // Skripte für verschiedene Entwicklungs- und Produktionsumgebungen
   "scripts": {
     "start": "node server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run client\" \"nodemon server.js\""
   },
+  // Abhängigkeiten der Anwendung
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.12.3",
     "cors": "^2.8.5",
     "jsonwebtoken": "^8.5.1"
   },
+  // Entwicklungsabhängigkeiten
   "devDependencies": {
     "nodemon": "^2.0.7",
     "concurrently": "^6.0.0"
